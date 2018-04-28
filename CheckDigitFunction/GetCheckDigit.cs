@@ -8,9 +8,9 @@ using Microsoft.Azure.WebJobs.Host;
 
 namespace CheckDigitFunction
 {
-    public static class Function1
+    public static class GetCheckDigit
     {
-        [FunctionName("Function1")]
+        [FunctionName("GetCheckDigit")]
         public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequestMessage req, TraceWriter log)
         {
             log.Info("C# HTTP trigger function processed a request.");
